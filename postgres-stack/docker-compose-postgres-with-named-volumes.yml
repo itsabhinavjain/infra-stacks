@@ -1,0 +1,25 @@
+# Versions where you are mapping a specific local folder to a volume 
+# docker-compose -f docker-compose-with-named-volume.yml up -d
+# docker-compose -f docker-compose-with-named-volume.yml down
+
+
+services:
+  postgres:
+    # PostgreSQL service configuration
+    image: postgres:latest
+    container_name: my_local_postgres
+    environment:
+      # Environment variables for the PostgreSQL database
+      POSTGRES_USER: myuser
+      POSTGRES_PASSWORD: mysecretpassword
+      POSTGRES_DB: mydatabase
+    ports:
+      - "5432:5432"
+    volumes:
+      # Mount a named volume 
+      - postgres-vol:/var/lib/postgresql/data
+    restart: unless-stopped
+
+volumes:
+  postgres-vol:
+    driver: local

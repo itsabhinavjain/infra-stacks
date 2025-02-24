@@ -1,0 +1,2 @@
+- Core `rabbitmq`
+- Management UI 

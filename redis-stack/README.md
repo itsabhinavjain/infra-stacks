@@ -1,0 +1,4 @@
+- Core `redis`
+- Management UI 
+	- `redisinsight` 
+	- `rediscommander` 

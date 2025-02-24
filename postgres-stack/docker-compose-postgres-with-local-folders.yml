@@ -1,0 +1,20 @@
+# Version where you are mapping a specific local folder to a volume 
+# docker-compose -f docker-compose-with-specific-local-folder.yml up -d
+# docker-compose -f docker-compose-with-specific-local-folder.yml down
+
+services:
+  postgres:
+    # PostgreSQL service configuration
+    image: postgres:latest
+    container_name: my_local_postgres
+    environment:
+      # Environment variables for the PostgreSQL database
+      POSTGRES_USER: myuser
+      POSTGRES_PASSWORD: mysecretpassword
+      POSTGRES_DB: mydatabase
+    ports:
+      - "5432:5432"
+    volumes:
+      # Mount a local folder to persist PostgreSQL data
+      - ${PWD}/postgres-data:/var/lib/postgresql/data
+    restart: unless-stopped
