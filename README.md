@@ -21,7 +21,6 @@ To be able to quickly spin up various stacks for local development.
 		- OpenSearch 
 		- RabbittMQ
 		- Neo4J
-		
 	- Applications 
 		- Airbyte 
 		- Metabase 
@@ -34,6 +33,9 @@ To be able to quickly spin up various stacks for local development.
 - TODO 
 	- Reverse Proxy 
 		- Nginx
+	- CICD related 
+    	- Jenkins 
+    	- (Security related)
 	- Container Managment - 
 		- Portainer 
 		- Docker Logs 
