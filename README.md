@@ -21,6 +21,7 @@ To be able to quickly spin up various stacks for local development.
 		- OpenSearch 
 		- RabbittMQ
 		- Neo4J
+		
 	- Applications 
 		- Airbyte 
 		- Metabase 
@@ -31,6 +32,17 @@ To be able to quickly spin up various stacks for local development.
 		- Firecrawl 
 		- Browseruse 
 - TODO 
-	- Minio
-	- LocalStack 
+	- Reverse Proxy 
+		- Nginx
+	- Container Managment - 
+		- Portainer 
+		- Docker Logs 
+		- Docker Security 
+	- Cloud services
+		- Minio
+		- LocalStack 
 	- Monitoring (Prometeus, Grafana etc) 
+		- Prometheus 
+		- Grafana 
+		- Loki (For Logs)
+		- (Include logging, application monitoring, open telemetry etc.)
